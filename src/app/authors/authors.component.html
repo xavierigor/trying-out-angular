@@ -1,0 +1,17 @@
+<h1>Authors</h1>
+
+<table *ngIf="responseAuthors">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Nome</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let author of responseAuthors?.results">
+      <td>{{ author.id }}</td>
+      <td>{{ author.name }}</td>
+    </tr>
+  </tbody>
+</table>
