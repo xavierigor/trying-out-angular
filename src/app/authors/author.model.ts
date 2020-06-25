@@ -9,3 +9,7 @@ export interface ResponseAuthors {
   previous?: any;
   results: Author[];
 }
+
+export interface RequestAuthor {
+  name: string;
+}

@@ -1,0 +1,14 @@
+<h1>You're adding an Author</h1>
+
+<input type="text" id="name" placeholder="Author's name" [(ngModel)]="author.name">
+
+<button (click)="save()">Submit</button>
+
+<div class="api-response" *ngIf="response">
+  <h3>Successfully created:</h3>
+
+  <div class="json">
+    <p>id: {{ response.id }},</p>
+    <p>name: {{ response.name }}</p>
+  </div>
+</div>
